@@ -35,10 +35,10 @@ h2 {
   text-transform: uppercase;
 }
 
-#trainer h2,
+#instructor h2,
 #newsletter h2,
 #blog h2,
-#aspects_yoga_loznica h2 {
+#aspects h2 {
   padding-bottom: 2px;
 }
 
@@ -73,17 +73,17 @@ a {
 /*---------------------------------------
     General               
 -----------------------------------------*/
-#trainer,
+#instructor,
 #blog,
-#aspects_yoga_loznica {
+#aspects {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
 #home,
-#trainer,
+#instructor,
 #newsletter,
-#aspects_yoga_loznica,
+#aspects,
 #testimonial,
 #blog-header {
   text-align: center;
@@ -304,30 +304,30 @@ a {
 
 
 /*---------------------------------------
-   Trainer section              
+   instructor section              
 -----------------------------------------*/
-#trainer {
+#instructor {
   background: #f9f9f9;
 }
 
-#trainer h3 {
+#instructor h3 {
   letter-spacing: 1px;
   margin-top: 0px;
   padding-bottom: 12px;
 }
 
-#trainer img {
+#instructor img {
   width: 100%;
 }
 
-#trainer .trainer-thumb {
+#instructor .instructor-thumb {
   position: relative;
   margin-top: 72px;
   margin-bottom: 32px;
   padding: 0px;
 }
 
-#trainer .trainer-thumb .trainer-overlay {
+#instructor .instructor-thumb .instructor-overlay {
   background: #26253a;
   color: #ffffff;
   position: absolute;
@@ -343,16 +343,16 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-#trainer .trainer-thumb:hover .trainer-overlay {
+#instructor .instructor-thumb:hover .instructor-overlay {
   opacity: 0.9;
   transform: scale(0.9);
 }
 
-#trainer .trainer-thumb .trainer-overlay h2 {
+#instructor .instructor-thumb .instructor-overlay h2 {
   padding-bottom: 0px;
 }
 
-#trainer .trainer-thumb .trainer-des {
+#instructor .instructor-thumb .instructor-des {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -627,9 +627,9 @@ a {
 .blog-clear { clear: both; height: 30px; }
 
 /*---------------------------------------
-    aspects_yoga_loznica section              
+    aspects section              
 -----------------------------------------*/
-#aspects_yoga_loznica {
+#aspects {
   background: url('../images/3_principles_yoga_loznica.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -637,7 +637,7 @@ a {
     color: #ffffff;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item {
+#aspects .aspects_item {
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -650,21 +650,21 @@ a {
   flex: 0 1 330px;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_feature-list {
+#aspects .aspects_feature-list {
   text-align: left;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_action {
+#aspects .aspects_action {
   color: inherit;
   border: none;
   background: none;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_action:focus {
+#aspects .aspects_action:focus {
   outline: none;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item {
+#aspects .aspects_item {
   font-size: 20px;
   margin-top: 72px;
   padding: 2em;
@@ -676,25 +676,25 @@ a {
   min-height: 700px;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:nth-child(2) {
+#aspects .aspects_item:nth-child(2) {
   border-right: none;
   border-left: none;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:hover {
+#aspects .aspects_item:hover {
   color: #444;
   background: #ffffff;
   border-color: transparent;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_title {
+#aspects .aspects_title {
   font-size: 2em;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_lotos {
+#aspects .aspects_lotos {
   font-size: 1.45em;
   font-weight: bold;
   line-height: 120px;
@@ -707,20 +707,20 @@ a {
   transition: color 0.3s, background 0.3s;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:first-child .aspects_yoga_loznica_lotos {
+#aspects .aspects_item:first-child .aspects_lotos {
   background: #26253a;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:nth-child(2) .aspects_yoga_loznica_lotos {
+#aspects .aspects_item:nth-child(2) .aspects_lotos {
   background: #26253a;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:hover .aspects_yoga_loznica_lotos {
+#aspects .aspects_item:hover .aspects_lotos {
   color: #fff;
   background: #222;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_feature-list {
+#aspects .aspects_feature-list {
   margin: 0;
   padding: 1em 1em 2em 1em;
   font-weight: bold;
@@ -730,7 +730,7 @@ a {
   text-align: center;
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_action {
+#aspects .aspects_action {
   font-weight: bold;
   margin-top: auto;
   padding: 18px 48px;
@@ -746,24 +746,24 @@ a {
   transform: translate3d(0, -15px, 0);
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_item:hover .aspects_yoga_loznica_action {
+#aspects .aspects_item:hover .aspects_action {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#aspects_yoga_loznica .aspects_yoga_loznica_action:hover,
-#aspects_yoga_loznica .aspects_yoga_loznica_action:focus {
+#aspects .aspects_action:hover,
+#aspects .aspects_action:focus {
   background: #222;
 }
 
 @media screen and (max-width: 60em) {
-  #aspects_yoga_loznica .aspects_yoga_loznica_item {
+  #aspects .aspects_item {
     max-width: none;
     width: 100%;
     flex: none;
   }
-  #aspects_yoga_loznica .aspects_yoga_loznica_item:nth-child(2) {
+  #aspects .aspects_item:nth-child(2) {
     border: 1px solid #fff;
   }
 }
@@ -916,9 +916,9 @@ footer .copyright-text {
     line-height: 18px;
   }
 
-  #trainer,
+  #instructor,
   #blog,
-  #aspects_yoga_loznica {
+  #aspects {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -967,7 +967,7 @@ footer .copyright-text {
     top: 0px;
   }
 
-  #aspects_yoga_loznica .aspects_yoga_loznica_action {
+  #aspects .aspects_action {
     font-size: 13px;
   }
 
