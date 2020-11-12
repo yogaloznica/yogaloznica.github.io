@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <title>Yoga Loznica</title>
+        <meta name="description" content="Rad, red i mir, disciplina i snaga, izdržljivost i upornost, posvećenost i trud, prevencija i terapija, svesna promena stanja uma, tela i duha, Yoga Loznica, Drago Katić.">
+        <meta name="author" content="Drago Katić">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Google Font -->
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:700italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <!-- =========================
+             PRE LOADER       
+        ============================== -->
+        <div  class="preloader">
+            <div class="sk-spinner sk-spinner-pulse"></div>
+        </div>
+        <!-- =========================
+            NAVIGATION SECTION   
+        ============================== -->
+        <div class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Yoga Loznica</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right main-navigation">
+                        <li><a href="index.html#home" class="smoothScroll">Joga</a></li>
+                        <li><a href="index.html#overview" class="smoothScroll">Disciplina</a></li>
+                        <li><a href="index.html#aspects" class="smoothScroll">Aspekti joge</a></li>
+                        <li><a href="index.html#instructor" class="smoothScroll">Instruktori</a></li>
+                        <li><a href="index.html#blog" class="smoothScroll">Blog</a></li>
+                        <li><a href="index.html#testimonial" class="smoothScroll">Rekli su</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- =========================
+            HOME SECTION   
+        ============================== -->
+        <section id="home" class="parallax-section">
+            <div class="container">
+            </div>
+        </section>
+        <!-- =========================
+            FOOTER SECTION   
+        ============================== -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+                        <h2>Najčešće pitanje</h2>
+                        <p>
+                            Kako da se pripremim za čas? Potrebno je da imate prostirku, da nosite garderobu koja pruža slobodu pokreta i da ne opteretite stomak pre časa.
+                        </p>
+                    </div>
+                    <div class="wow fadeInUp col-md-5 col-sm-4"  data-wow-delay="0.9s">
+                        <h2>Termini</h2>
+                        <div>
+                            <h5>Utorak</h5>
+                            <h4>od 20:15 do 21:45</h4>
+                        </div>
+                        <div>
+                            <h5>Četvrtak</h5>
+                            <h4>od 20:15 do 21:45</h4>
+                        </div>
+                    </div>
+                    <div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="1s">
+                        <h2>Follow us</h2>
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/YogaLoznica/" class="fa fa-facebook wow fadeIn" data-wow-delay="1s" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com/yogaloznica/" class="fa fa-instagram wow fadeIn" data-wow-delay="1.6s" target="_blank"></a></li>
+                            <li><a href="tel:+381640882949" class="fa fa-phone wow fadeIn" data-wow-delay="1.6s"></a></li>
+                            <li><a href="kontakt.html" class="fa fa-map wow fadeIn" data-wow-delay="1.6s"></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12 col-sm-12">
+                        <p class="copyright-text">
+                            <i>
+                                Copyright &copy; <i id="now"></i> Yoga Loznica | Design: <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a>
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- =========================
+             SCRIPTS   
+            ============================== --> 
+        <script>
+            // Set default values
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("now").innerHTML = year;
+            document.getElementById("comment-form-status").innerHTML = "Pošaljite vaše podatke kako bi smo vas o svemu obaveštavali";
+            // Formspree send email event
+            window.addEventListener("DOMContentLoaded", function () {
+                // get the form elements defined in your form HTML above
+                var form = document.getElementById("newsletter-signup");
+                var button = document.getElementById("submit-form-button");
+                var status = document.getElementById("comment-form-status");
+                // Success and Error functions for after the form is submitted
+                function success() {
+                    form.reset();
+                    button.style = "display: none ";
+                    status.innerHTML = "Hvala na poverenju. Bićemo u kontaktu!";
+                }
+                function error() {
+                    status.innerHTML = "Ups! Izgleda da je sistem preopterećen. Pokušajte ponovo.";
+                }
+                // handle the form submission event
+                form.addEventListener("submit", function (ev) {
+                    ev.preventDefault();
+                    var data = new FormData(form);
+                    ajax(form.method, form.action, data, success, error);
+                });
+            });
+            // helper function for sending an AJAX request
+            function ajax(method, url, data, success, error) {
+                var xhr = new XMLHttpRequest();
+                xhr.open(method, url);
+                xhr.setRequestHeader("Accept", "application/json");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState !== XMLHttpRequest.DONE)
+                        return;
+                    if (xhr.status === 200) {
+                        success(xhr.response, xhr.responseType);
+                    } else {
+                        error(xhr.status, xhr.response, xhr.responseType);
+                    }
+                };
+                xhr.send(data);
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQ9WYSD4VP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-JQ9WYSD4VP');
+        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
+
