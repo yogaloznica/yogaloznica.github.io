@@ -63,10 +63,10 @@ $(document).ready(function() {
   function initParallax() {
     $('#home').parallax("100%", 0.1);
     $('#overview').parallax("100%", 0.3);
-    $('#trainer').parallax("100%", 0.2);
+    $('#instructor').parallax("100%", 0.2);
     $('#newsletter').parallax("100%", 0.3);
     $('#blog').parallax("100%", 0.1);
-    $('#aspects_yoga_loznica').parallax("100%", 0.2);
+    $('#aspects').parallax("100%", 0.2);
     $('#testimonial').parallax("100%", 0.2);
 
   }
