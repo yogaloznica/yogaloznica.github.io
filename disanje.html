@@ -227,7 +227,7 @@
             </div>
         </section>
         <!-- =========================
-        FOOTER SECTION
+        FOOTER SECTION   
         ============================== -->
         <footer>
             <div class="container">
@@ -254,7 +254,7 @@
                         <ul class="social-icon">
                             <li><a href="https://www.facebook.com/YogaLoznica/" class="fa fa-facebook wow fadeIn" data-wow-delay="1s" target="_blank"></a></li>
                             <li><a href="https://www.instagram.com/yogaloznica/" class="fa fa-instagram wow fadeIn" data-wow-delay="1.6s" target="_blank"></a></li>
-                            <li><a href="tel:+381640882949" class="fa fa-phone wow fadeIn" data-wow-delay="1.6s"></a></li>
+                            <li><a id="is_phone" class="fa fa-phone wow fadeIn" data-wow-delay="1.6s"></a></li>
                             <li><a href="kontakt.html" class="fa fa-location-arrow wow fadeIn" data-wow-delay="1.6s"></a></li>
                         </ul>
                     </div>
@@ -271,62 +271,7 @@
         </footer>
         <!-- =========================
         SCRIPTS
-        ============================== --> 
-        <script>
-            // Set default values
-            var date = new Date();
-            var year = date.getFullYear();
-            document.getElementById("now").innerHTML = year;
-            document.getElementById("comment-form-status").innerHTML = "Ostavite komentar i svoju fotografiju";
-            // Formspree send email event
-            window.addEventListener("DOMContentLoaded", function () {
-                // get the form elements defined in your form HTML above
-                var form = document.getElementById("comment-form");
-                var button = document.getElementById("submit-form-button");
-                var status = document.getElementById("comment-form-status");
-                // Success and Error functions for after the form is submitted
-                function success() {
-                    form.reset();
-                    button.style = "display: none ";
-                    status.innerHTML = "Hvala na poverenju. Bićemo u kontaktu!";
-                }
-                function error() {
-                    status.innerHTML = "Ups! Izgleda da je sistem preopterećen. Pokušajte ponovo.";
-                }
-                // handle the form submission event
-                form.addEventListener("submit", function (ev) {
-                    ev.preventDefault();
-                    var data = new FormData(form);
-                    ajax(form.method, form.action, data, success, error);
-                });
-            });
-            // helper function for sending an AJAX request
-            function ajax(method, url, data, success, error) {
-                var xhr = new XMLHttpRequest();
-                xhr.open(method, url);
-                xhr.setRequestHeader("Accept", "application/json");
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState !== XMLHttpRequest.DONE)
-                        return;
-                    if (xhr.status === 200) {
-                        success(xhr.response, xhr.responseType);
-                    } else {
-                        error(xhr.status, xhr.response, xhr.responseType);
-                    }
-                };
-                xhr.send(data);
-            }
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQ9WYSD4VP"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-JQ9WYSD4VP');
-        </script>
+        ============================== -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.parallax.js"></script>
