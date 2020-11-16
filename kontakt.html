@@ -12,6 +12,21 @@
 
             gtag('config', 'G-JQ9WYSD4VP');
         </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P9F7JN9');
+        </script>
+        <!-- End Google Tag Manager -->
         <title>Yoga Loznica</title>
         <meta name="description" content="Kontakt - Yoga Loznica - Drago Katić.">
         <meta name="author" content="Drago Katić">
@@ -33,14 +48,19 @@
         <link href='https://fonts.googleapis.com/css?family=Lora:700italic' rel='stylesheet' type='text/css'>
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9F7JN9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <!-- =========================
-             PRE LOADER       
+        PRE LOADER       
         ============================== -->
         <div  class="preloader">
             <div class="sk-spinner sk-spinner-pulse"></div>
         </div>
         <!-- =========================
-            NAVIGATION SECTION   
+        NAVIGATION SECTION   
         ============================== -->
         <div class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
             <div class="container">
@@ -50,27 +70,66 @@
                         <span class="icon icon-bar"></span>
                         <span class="icon icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand">Yoga Loznica</a>
+                    <a href="index.html" class="navbar-brand">Yoga Loznica</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right main-navigation">
-                        <li><a href="index.html#home" class="smoothScroll">Joga</a></li>
-                        <li><a href="index.html#overview" class="smoothScroll">Disciplina</a></li>
-                        <li><a href="index.html#aspects" class="smoothScroll">Aspekti joge</a></li>
-                        <li><a href="index.html#instructor" class="smoothScroll">Instruktori</a></li>
-                        <li><a href="index.html#blog" class="smoothScroll">Blog</a></li>
-                        <li><a href="index.html#testimonial" class="smoothScroll">Rekli su</a></li>
+                        <li><a href="#home" class="smoothScroll">Joga</a></li>
+                        <li><a href="#overview" class="smoothScroll">Disciplina</a></li>
+                        <li><a href="#aspects" class="smoothScroll">Aspekti joge</a></li>
+                        <li><a href="#instructor" class="smoothScroll">Instruktori</a></li>
+                        <li><a href="#blog" class="smoothScroll">Blog</a></li>
+                        <li><a href="#testimonial" class="smoothScroll">Rekli su</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- =========================
-            HOME SECTION   
-        ============================== -->
-        <section id="home" class="parallax-section">
+        <section id="testimonial" class="parallax-section">
             <div class="container">
+                <div class="row">
+
+                </div>
             </div>
         </section>
+        <!-- =========================
+        CONTACT SECTION   
+        ============================== -->
+        <section id="contact" class="parallax-section">
+            <div class="container">
+                <div class="row">
+                    <div class="wow fadeInUp col-md-12 col-sm-6" data-wow-delay="1s">
+                        <div class="contact_item">
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.0483410671361!2d19.222881729229556!3d44.53167319869384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759618b16d822d5%3A0x9e570edf7108a875!2sYoga%20Loznica!5e0!3m2!1ssr!2srs!4v1605480880051!5m2!1ssr!2srs" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wow fadeInUp col-md-12 col-sm-6" data-wow-delay="1s">
+                        <div class="contact_item">
+                            <h3 id="comment-form-status"></h3>
+                            <form action="https://formspree.io/f/xdopzvdj" method="post" enctype="multipart/form-data" id="comment-form">
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Ime" name="name" required>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <textarea class="form-control" placeholder="Komentar" rows="5" name="message" required id="message"></textarea>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <input class="form-control" type="file" name="upload" required>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <input name="submit" type="submit" class="form-control" id="submit-form-button" value="Pošalji">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- =========================
         FOOTER SECTION   
         ============================== -->
