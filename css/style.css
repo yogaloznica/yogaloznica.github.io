@@ -1018,3 +1018,55 @@ footer .copyright-text {
 .box_padding {
     margin: 1%;
 }
+
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+#contact {
+    background: url('../images/contact_yoga_loznica.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+#contact .contact_detail {
+  padding-top: 3rem;
+}
+
+#contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 20px;
+  margin-bottom: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:focus {
+  border-bottom-color: #ffffff;
+}
+
+#contact input {
+  height: 45px;
+}
+
+#contact input[type="submit"] {
+  background: #26253a;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  height: 65px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact input[type="submit"]:hover {
+  background: #ffffff;
+  color: #26253a;
+}
