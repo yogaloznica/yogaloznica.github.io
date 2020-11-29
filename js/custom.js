@@ -121,15 +121,16 @@ $(document).ready(function () {
 // Set default values
 var date = new Date();
 var year = date.getFullYear();
-document.getElementById("is_phone").href = isPhone();
+document.getElementById("is-phone").href = isPhone();
 document.getElementById("now").innerHTML = year;
-document.getElementById("newsletter-form-status").innerHTML = "Pošaljite vaše podatke kako bi smo vas o svemu obaveštavali";
+document.getElementById("form-status").innerHTML = "Želeli bismo da čujemo vaše mišljenje";
+
 // Formspree send email event
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
-    var form = document.getElementById("newsletter-signup");
+    var form = document.getElementById("e-mail-form");
     var button = document.getElementById("submit-form-button");
-    var status = document.getElementById("newsletter-form-status");
+    var status = document.getElementById("form-status");
     // Success and Error functions for after the form is submitted
     function success() {
         form.reset();
@@ -137,7 +138,7 @@ window.addEventListener("DOMContentLoaded", function () {
         status.innerHTML = "Hvala na poverenju. Bićemo u kontaktu!";
     }
     function error() {
-        status.innerHTML = "Ups! Izgleda da je sistem preopterećen. Pokušajte ponovo.";
+        status.innerHTML = "Ups! Nešto nije u redu. Pokušajte ponovo.";
     }
     // handle the form submission event
     form.addEventListener("submit", function (ev) {
