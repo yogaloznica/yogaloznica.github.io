@@ -123,7 +123,6 @@ var date = new Date();
 var year = date.getFullYear();
 document.getElementById("is-phone").href = isPhone();
 document.getElementById("now").innerHTML = year;
-document.getElementById("form-status").innerHTML = "Želeli bismo da čujemo vaše mišljenje";
 
 // Formspree send email event
 window.addEventListener("DOMContentLoaded", function () {
