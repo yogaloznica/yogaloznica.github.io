@@ -186,7 +186,7 @@
                             </div>
                         </section>
                         <div class="blog-comment-form wow fadeInUp" data-wow-delay="1s">
-                            <h3 id="form-status"></h3>
+                            <h3>Pošaljite vaš komentar</h3>
                             <form action="https://formspree.io/f/xdopzvdj" method="post" enctype="multipart/form-data" id="e-mail-form">
                                 <div class="col-md-6 col-sm-6">
                                     <input type="text" class="form-control" placeholder="Ime" name="name" required>
@@ -202,6 +202,11 @@
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <input name="submit" type="submit" class="form-control" id="submit-form-button" value="Pošalji">
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <br>
+                                    <p id="form-status"></p>
+                                    <br>
                                 </div>
                             </form>
                         </div>
@@ -305,5 +310,8 @@
         <script src="js/jquery.parallax.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            document.getElementById("form-status").innerHTML = "";
+        </script>
     </body>
 </html>
