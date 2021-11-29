@@ -118,6 +118,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right main-navigation">
                         <li><a href="#newsletter" class="smoothScroll">Prijava za časove</a></li>
+                        <li><a href="#info" class="smoothScroll">Info</a></li>
                         <li><a href="#overview" class="smoothScroll">Disciplina</a></li>
                         <li><a href="#aspects" class="smoothScroll">Aspekti joge</a></li>
                         <li><a href="#instructor" class="smoothScroll">Instruktori</a></li>
@@ -464,37 +465,56 @@
         <!-- =========================
         FOOTER SECTION
         ============================== -->
-        <footer>
+        <footer id="info">
             <div class="container">
-                <div class="row">
+                <div class="row" style="text-align: left;">
                     <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
-                        <h2>Najčešće pitanje</h2>
+                        <h2>Najčešća pitanja</h2>
                         <p>
-                            Kako da se pripremim za čas?
+                            <b><i>Kako da se pripremim za čas?</i> - </b> Potrebno je da imate prostirku, da nosite garderobu koja pruža slobodu pokreta i da ne opteretite stomak pre časa.
                         </p>
                         <p>
-                            Potrebno je da imate prostirku, da nosite garderobu koja pruža slobodu pokreta i da ne opteretite stomak pre časa.
+                            <b><i>Gde?</i> - </b> Časovi su u sali lozničke gimnazije.
+                        </p>
+                        <p>
+                            <b><i>Kako?</i> - </b> Časove možete pratiti uživo ili posredstvom Interneta.
                         </p>
                     </div>
-                    <div class="wow fadeInUp col-md-5 col-sm-4"  data-wow-delay="0.9s">
+                    <div class="wow fadeInUp col-md-4 col-sm-4"  data-wow-delay="0.9s">
                         <h2>Termini</h2>
-                        <div>
-                            <h5>Utorak</h5>
-                            <h4>20:30 - 21:45</h4>
-                        </div>
-                        <div>
-                            <h5>Četvrtak</h5>
-                            <h4>20:30 - 21:45</h4>
-                        </div>
-                    </div>
-                    <div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="1s">
+                        <p>
+                            <b><i>Utorkom i četvrtkom</i> - </b> od <b>20:30</b> do <b>21:45</b>
+                        </p>
                         <h2>Pratite nas</h2>
-                        <ul class="social-icon">
-                            <li><a href="https://www.facebook.com/YogaLoznica/" class="fa fa-facebook wow fadeIn" data-wow-delay="1s" target="_blank"></a></li>
+                        <ul class="social-icon" style="text-align: left;">
+                            <li style="margin-left: 0px;"><a href="https://www.facebook.com/YogaLoznica/" class="fa fa-facebook wow fadeIn" data-wow-delay="1s" target="_blank"></a></li>
                             <li><a href="https://www.instagram.com/yogaloznica/" class="fa fa-instagram wow fadeIn" data-wow-delay="1.6s" target="_blank"></a></li>
                             <li><a id="is-phone" class="fa fa-phone wow fadeIn" data-wow-delay="1.6s"></a></li>
                             <li><a href="kontakt.html" class="fa fa-location-arrow wow fadeIn" data-wow-delay="1.6s"></a></li>
                         </ul>
+                        <p>
+                            <span class="fa fa-comment" style="margin-right: 5px;"></span>&nbsp;<b><a href="kontakt.html" style="color: #ffffff; margin: 0; padding: 0;">Kontakt strana</a></b>
+                        </p>
+                        <p>
+                            <span class="fa fa-phone" style="margin-right: 10px;"></span>&nbsp;<b><a href="tel:+381640882949" style="color: #ffffff; margin: 0; padding: 0;">064 088 2949</a></b>
+                        </p>
+                    </div>
+                    <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1s">
+                        <h2>Novosti</h2>
+                        <form action="https://formspree.io/f/xdopzvdj" method="post" enctype="text/plain" id="newsletter-form">
+                            <div>
+                                <input style="margin-bottom: 5px;" name="name" type="text" class="form-control" id="name" placeholder="Ime">
+                            </div>
+                            <div>
+                                <input style="margin-bottom: 5px;" name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div>
+                                <input style="margin-bottom: 5px;" name="submit" type="submit" class="form-control" id="newsletter-submit-form-button" value="ŽELIM DA BUDEM U TOKU SA NOVOSTIMA!">
+                            </div>
+                            <div>
+                                <p id="newsletter-form-status"></p>
+                            </div>
+                        </form>
                     </div>
                     <div class="clearfix"></div>
                     <div class="col-md-12 col-sm-12">
@@ -520,7 +540,8 @@
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
         <script>
-            document.getElementById("form-status").innerHTML = "Pošaljite nam vaše podatke kako bi smo vas obaveštavali o svemu";
+            document.getElementById("form-status").innerHTML = "Prijavite se za časove";
+            document.getElementById("newsletter-form-status").innerHTML = "Prijavite se za novosti";
         </script>
 
     </body>
