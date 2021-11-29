@@ -146,6 +146,32 @@ window.addEventListener("DOMContentLoaded", function () {
         ajax(form.method, form.action, data, success, error);
     });
 });
+
+// Formspree send newsletter event
+window.addEventListener("DOMContentLoaded", function () {
+    // get the form elements defined in your form HTML above
+    var newsletterForm = document.getElementById("newsletter-form");
+    var newsletterButton = document.getElementById("newsletter-submit-form-button");
+    var newsletterStatus = document.getElementById("newsletter-form-status");
+    // Success and Error functions for after the form is submitted
+    function success() {
+        newsletterForm.reset();
+        newsletterButton.style = "display: none ";
+        newsletterStatus.innerHTML = "Hvala na poverenju. Bićemo u kontaktu!";
+    }
+    function error() {
+        newsletterStatus.innerHTML = "Ups! Nešto nije u redu. Pokušajte ponovo.";
+    }
+    // handle the form submission event
+    newsletterForm.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var data = new FormData(newsletterForm);
+        ajax(newsletterForm.method, newsletterForm.action, data, success, error);
+    });
+});
+
+
+
 // helper function for sending an AJAX request
 function ajax(method, url, data, success, error) {
     var xhr = new XMLHttpRequest();
