@@ -1,2 +1,3 @@
-# yogaloznica.github.io
-Yoga Loznica 
+# Yoga Loznica
+
+Sajt je preseljen na https://yogaloznica.dkd.rs/
